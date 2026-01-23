@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // ເພີ່ມບັນທັດນີ້
+  // ລຶບບັນທັດ output: 'export' ອອກ
   images: {
-    unoptimized: true, // ຈຳເປັນສຳລັບ Static export
+    unoptimized: true,
   },
 };
 
