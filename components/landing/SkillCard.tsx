@@ -10,7 +10,7 @@ const SkillCard = () => {
     { name: "React / Next.js", icon: <Layers />, group: "frontend" },
     { name: "Tailwind CSS", icon: <Zap />, group: "frontend" },
     { name: "TypeScript", icon: <Code />, group: "frontend" },
-    { name: "Node.js", icon: <Cpu />, group: "backend" },
+    { name: "Express / Node.js", icon: <Cpu />, group: "backend" },
     { name: "MySQL", icon: <Database />, group: "backend" },
     { name: "PostgreSQL / Prisma", icon: <Server />, group: "backend" },
     { name: "AWS / Vercel", icon: <Globe />, group: "backend" },

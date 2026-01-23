@@ -41,28 +41,43 @@ const Projects = () => {
     },
     {
       id: 3,
-      category: "Mobile",
-      title: { en: "Lao Travel Guide", lo: "ຄູ່ມືທ່ອງທ່ຽວລາວ" },
-      desc: {
-        en: "A dynamic map-based application for tourists.",
-        lo: "ແອັບພລິເຄຊັນແຜນທີ່ສຳລັບນັກທ່ອງທ່ຽວ.",
+      category: "Web",
+      title: {
+        en: "Doctor's Appointment System",
+        lo: "ລະບົບນັດໝາຍທ່ານໝໍ",
       },
-      tech: ["React Native", "Mapbox", "Firebase"],
-      image:
-        "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80",
-    },
-    {
-      id: 4,
-      category: "AI",
-      title: { en: "AI Task Manager", lo: "ລະບົບຈັດການວຽກ AI" },
       desc: {
-        en: "Automating workflow using GPT-4 API.",
-        lo: "ລະບົບອັດຕະໂນມັດໂດຍໃຊ້ GPT-4 API.",
+        en: "A full-stack healthcare management platform allowing patients to book slots, manage profiles, and view doctor availability in real-time.",
+        lo: "ແພລດຟອມຈັດການການດູແລສຸຂະພາບແບບ Full-stack ທີ່ຊ່ວຍໃຫ້ຄົນເຈັບສາມາດຈອງເວລາ, ຈັດການໂປຣໄຟລ໌ ແລະ ເບິ່ງເວລາຫວ່າງຂອງໝໍໄດ້ແບບ Real-time.",
       },
-      tech: ["OpenAI", "Node.js", "Tailwind"],
-      image:
-        "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+      github: "https://github.com/xiongporher/doctors-appointment",
+      tech: ["React", "Tailwind", "MongoDB", "Node.js"],
+      image: "/doctors-appointment.png",
     },
+    // {
+    //   id: 3,
+    //   category: "Mobile",
+    //   title: { en: "Lao Travel Guide", lo: "ຄູ່ມືທ່ອງທ່ຽວລາວ" },
+    //   desc: {
+    //     en: "A dynamic map-based application for tourists.",
+    //     lo: "ແອັບພລິເຄຊັນແຜນທີ່ສຳລັບນັກທ່ອງທ່ຽວ.",
+    //   },
+    //   tech: ["React Native", "Mapbox", "Firebase"],
+    //   image:
+    //     "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80",
+    // },
+    // {
+    //   id: 4,
+    //   category: "AI",
+    //   title: { en: "AI Task Manager", lo: "ລະບົບຈັດການວຽກ AI" },
+    //   desc: {
+    //     en: "Automating workflow using GPT-4 API.",
+    //     lo: "ລະບົບອັດຕະໂນມັດໂດຍໃຊ້ GPT-4 API.",
+    //   },
+    //   tech: ["OpenAI", "Node.js", "Tailwind"],
+    //   image:
+    //     "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+    // },
   ];
 
   const filteredProjects = useMemo(
