@@ -28,31 +28,31 @@ export function Navbar() {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
         isScrolled
-          ? "bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-slate-200 dark:border-slate-800 py-3 shadow-lg"
-          : "bg-transparent border-transparent py-5"
+          ? "bg-background/90 backdrop-blur-md border-border py-3 shadow-lg"
+          : "bg-background/50 backdrop-blur-sm border-transparent py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="text-xl font-black flex items-center dark:text-white"
+          className="text-xl font-black flex items-center gap-1 text-foreground"
         >
           <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white">
             D
           </div>
           <span className="tracking-tighter hidden sm:block">
-            EV Portfolio
+            DEV Portfolio
           </span>
         </motion.div>
 
-        <div className="hidden md:flex items-center gap-8 text-[14px] font-bold uppercase tracking-widest text-gray-900 dark:text-white">
+        <div className="hidden md:flex items-center gap-8 text-[14px] font-bold uppercase tracking-widest text-foreground">
           {(["about", "experience", "projects", "contact"] as const).map(
             (item) => (
               <a
                 key={item}
                 href={`#${item}`}
-                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="hover:text-blue-600 transition-colors"
               >
                 {t.nav[item]}
               </a>
@@ -63,13 +63,13 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <button
             onClick={toggleLanguage}
-            className="p-2 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[10px] font-black uppercase dark:text-white"
+            className="p-2 rounded-xl bg-secondary border border-border text-[10px] font-black uppercase text-foreground hover:border-blue-500 transition-colors"
           >
             {lang}
           </button>
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 dark:text-white"
+            className="p-2 rounded-xl bg-secondary border border-border text-foreground hover:border-blue-500 transition-colors"
           >
             {mounted ? (
               theme === "dark" ? (

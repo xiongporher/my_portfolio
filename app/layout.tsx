@@ -9,7 +9,6 @@ const outfitFont = Outfit({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-
 export const metadata: Metadata = {
   title: "Developer Portfolio | Next.js Style",
   description: "Built with Next.js, shadcn/ui, and Tailwind CSS",
@@ -26,12 +25,10 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
+          enableSystem={false}
           disableTransitionOnChange
         >
-          <LanguageProvider>
-              {children}
-          </LanguageProvider>
+          <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

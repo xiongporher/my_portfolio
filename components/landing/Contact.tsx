@@ -50,7 +50,10 @@ export function Contact() {
     }
   };
   return (
-    <section id="contact" className="py-20">
+    <section
+      id="contact"
+      className="py-20 bg-background transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-blue-600 dark:bg-blue-700 rounded-[3rem] p-10 md:p-20 text-white text-center relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />

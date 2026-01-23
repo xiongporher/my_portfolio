@@ -17,10 +17,10 @@ const Home = () => {
   });
 
   return (
-    <div className="min-h-screen dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-500 selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-blue-500 selection:text-white overflow-x-hidden transition-colors duration-300">
       {/* Scroll Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-blue-600 z-[100] origin-left"
+        className="fixed top-0 left-0 right-0 h-1 bg-blue-600 z-100 origin-left"
         style={{ scaleX }}
       />
 

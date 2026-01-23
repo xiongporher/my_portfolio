@@ -14,7 +14,10 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-32">
+    <section
+      id="about"
+      className="py-16 md:py-32 bg-background transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-[1fr_400px] gap-20">
           <motion.div
@@ -24,10 +27,10 @@ const About = () => {
             transition={{ duration: 0.6 }}
             variants={fadeInUp}
           >
-            <h2 className="text-4xl font-black mb-8 flex items-center gap-4 uppercase tracking-tighter">
+            <h2 className="text-4xl font-black mb-8 flex items-center gap-4 uppercase tracking-tighter text-foreground">
               {t.about.title}
             </h2>
-            <p className="text-xl text-slate-600 dark:text-slate-400 mb-12 leading-relaxed font-medium">
+            <p className="text-xl text-muted-foreground mb-12 leading-relaxed font-medium">
               {t.about.description}
             </p>
 
@@ -39,8 +42,8 @@ const About = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             className="relative group"
           >
-            <div className="absolute -inset-4 bg-blue-600/10 rounded-[3rem] blur-2xl group-hover:bg-blue-600/20 transition-all" />
-            <div className="relative rounded-[2.5rem] overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
+            <div className="absolute -inset-4 bg-blue-500/10 dark:bg-blue-600/10 rounded-[3rem] blur-2xl group-hover:bg-blue-500/20 dark:group-hover:bg-blue-600/20 transition-all" />
+            <div className="relative rounded-[2.5rem] overflow-hidden border-4 border-border shadow-xl">
               <Image
                 src="/IMG_2049.JPG"
                 className="w-full aspect-square object-cover object-top"

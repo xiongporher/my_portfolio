@@ -43,4 +43,5 @@ export interface Project {
   desc: Record<Lang, string>;
   tech: string[];
   image: string;
+  github?: string;
 }

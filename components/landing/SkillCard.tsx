@@ -1,15 +1,6 @@
 "use client";
 import { Skill } from "@/types/portfolio";
-import {
-  Code,
-  Cpu,
-  Database,
-  Globe,
-  Layers,
-  Server,
-  Terminal,
-  Zap,
-} from "lucide-react";
+import { Code, Cpu, Database, Globe, Layers, Server, Zap } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const SkillCard = () => {
@@ -37,12 +28,12 @@ const SkillCard = () => {
               .map((skill, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-3 p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-colors group"
+                  className="flex items-center gap-3 p-4 bg-secondary rounded-2xl border border-border hover:border-blue-500 transition-colors group"
                 >
                   <div className="text-blue-600 group-hover:scale-110 transition-transform">
                     {skill.icon}
                   </div>
-                  <span className="font-bold text-sm tracking-tight">
+                  <span className="font-bold text-sm tracking-tight text-foreground">
                     {skill.name}
                   </span>
                 </div>
