@@ -2,7 +2,7 @@
 import { motion, useScroll, useSpring } from "framer-motion";
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/landing/Hero";
-import Experience from "@/components/landing/Experience";
+// import Experience from "@/components/landing/Experience";
 import About from "@/components/landing/About";
 import Projects from "@/components/landing/Projects";
 import { Contact } from "@/components/landing/Contact";
@@ -31,7 +31,7 @@ const Home = () => {
       <Hero />
 
       {/* Stats / Features Row */}
-      <Experience />
+      {/* <Experience /> */}
 
       {/* About & Skills */}
       <About />

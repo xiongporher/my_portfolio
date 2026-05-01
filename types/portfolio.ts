@@ -1,22 +1,26 @@
-
-export type Lang = 'en' | 'lo';
+export type Lang = "en" | "lo";
 
 export interface TranslationSet {
-  nav: { about: string; projects: string; experience: string; contact: string };
+  nav: { about: string; projects: string; skills: string; contact: string };
   hero: { greeting: string; role: string; cta: string; description: string };
-  about: { 
-    title: string; 
-    description: string; 
-    skillGroups: { frontend: string; backend: string; design: string } 
+  about: {
+    title: string;
+    description: string;
+    skillGroups: { frontend: string; backend: string; design: string };
   };
   experience: {
     title: string;
-    items: Array<{ company: string; role: string; period: string; desc: string }>;
+    items: Array<{
+      company: string;
+      role: string;
+      period: string;
+      desc: string;
+    }>;
   };
-  projects: { 
-    title: string; 
+  projects: {
+    title: string;
     filterAll: string;
-    viewProject: string 
+    viewProject: string;
   };
   contact: {
     title: string;
@@ -26,6 +30,7 @@ export interface TranslationSet {
     message: string;
     send: string;
     success: string;
+    error: string;
   };
   footer: string;
 }
@@ -33,7 +38,7 @@ export interface TranslationSet {
 export interface Skill {
   name: string;
   icon: React.ReactNode;
-  group: 'frontend' | 'backend' | 'design';
+  group: "frontend" | "backend" | "design";
 }
 
 export interface Project {

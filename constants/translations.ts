@@ -5,7 +5,7 @@ export const translations: Record<Lang, TranslationSet> = {
     nav: {
       about: "About",
       projects: "Projects",
-      experience: "Experience",
+      skills: "Skills",
       contact: "Contact",
     },
     hero: {
@@ -13,7 +13,7 @@ export const translations: Record<Lang, TranslationSet> = {
       role: "Full Stack Developer",
       cta: "Explore Projects",
       description:
-        "I craft high-performance digital experiences using Next.js and Cloud technologies. Turning complex logic into elegant interfaces.",
+        "A Full Stack Developer crafting premium digital resilient architectures. Fast delivery powered.",
     },
     about: {
       title: "About Me",
@@ -43,7 +43,7 @@ export const translations: Record<Lang, TranslationSet> = {
       ],
     },
     projects: {
-      title: "Selected Projects",
+      title: "Featured Work",
       filterAll: "All",
       viewProject: "View Project",
     },
@@ -54,8 +54,9 @@ export const translations: Record<Lang, TranslationSet> = {
       name: "Full Name",
       email: "Email Address",
       message: "Tell me about your project",
-      send: "Send Message",
+      send: "Connect on Facebook",
       success: "Message sent! I'll get back to you soon.",
+      error: "Please complete all fields.",
     },
 
     footer: "© 2025 Crafted with Next.js, Tailwind & Framer Motion.",
@@ -64,7 +65,7 @@ export const translations: Record<Lang, TranslationSet> = {
     nav: {
       about: "ກ່ຽວກັບ",
       projects: "ຜົນງານ",
-      experience: "ປະສົບການ",
+      skills: "ທັກສະ",
       contact: "ຕິດຕໍ່",
     },
     hero: {
@@ -72,7 +73,7 @@ export const translations: Record<Lang, TranslationSet> = {
       role: "ນັກພັດທະນາເວັບໄຊທ໌ (Full Stack)",
       cta: "ເບິ່ງຜົນງານ",
       description:
-        "ຂ້ອຍສ້າງປະສົບການດິຈິຕອນທີ່ມີປະສິດທິພາບສູງໂດຍໃຊ້ Next.js ແລະ ເຕັກໂນໂລຊີ Cloud. ປ່ຽນລະບົບທີ່ສັບສົນໃຫ້ເປັນໜ້າຕາທີ່ສວຍງາມ.",
+        "ນັກພັດທະນາ Full-Stack ທີ່ສ້າງລະບົບດິຈິຕອລລະດັບສູງ. ສົ່ງງານໄວ ແລະ ມີຄຸນນະພາບ.",
     },
     about: {
       title: "ກ່ຽວກັບຂ້ອຍ",
@@ -102,7 +103,7 @@ export const translations: Record<Lang, TranslationSet> = {
       ],
     },
     projects: {
-      title: "ຜົນງານທີ່ຜ່ານມາ",
+      title: "ຜົນງານໂດດເດັ່ນ",
       filterAll: "ທັງໝົດ",
       viewProject: "ເບິ່ງໂຄງການ",
     },
@@ -113,8 +114,9 @@ export const translations: Record<Lang, TranslationSet> = {
       name: "ຊື່ ແລະ ນາມສະກຸນ",
       email: "ອີເມວ",
       message: "ບອກຂ້ອຍກ່ຽວກັບໂຄງການຂອງເຈົ້າ",
-      send: "ສົ່ງຂໍ້ຄວາມ",
+      send: "ຕິດຕໍ່ທາງ Facebook",
       success: "ສົ່ງຂໍ້ຄວາມສຳເລັດ! ຂ້ອຍຈະຕິດຕໍ່ກັບຫາເຈົ້າໂດຍໄວ.",
+      error: "ກະລຸນາເຕັ້ມທຸກຊ່ວງຂໍ້ມູນ.",
     },
     footer: "© 2025 ສ້າງດ້ວຍ Next.js, Tailwind ແລະ Framer Motion.",
   },

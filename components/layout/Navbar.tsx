@@ -47,17 +47,15 @@ export function Navbar() {
         </motion.div>
 
         <div className="hidden md:flex items-center gap-8 text-[14px] font-bold uppercase tracking-widest text-foreground">
-          {(["about", "experience", "projects", "contact"] as const).map(
-            (item) => (
-              <a
-                key={item}
-                href={`#${item}`}
-                className="hover:text-blue-600 transition-colors"
-              >
-                {t.nav[item]}
-              </a>
-            ),
-          )}
+          {(["about", "skills", "projects", "contact"] as const).map((item) => (
+            <a
+              key={item}
+              href={item === "skills" ? "#about" : `#${item}`}
+              className="hover:text-blue-600 transition-colors"
+            >
+              {t.nav[item]}
+            </a>
+          ))}
         </div>
 
         <div className="flex items-center gap-2">
