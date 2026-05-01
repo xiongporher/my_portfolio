@@ -10,7 +10,7 @@ const outfitFont = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Developer Portfolio | Next.js Style",
+  title: "Xiongpor Her | Full Stack Developer",
   description: "Built with Next.js, shadcn/ui, and Tailwind CSS",
 };
 
